@@ -1,0 +1,82 @@
+<h1 style="color:red;text-align:center">Html To Servlet communication using forms</h1>
+
+<style>
+    .div{
+        height: 80%;
+        width: 40%;
+        border: solid black;
+        text-align: center;
+        background-color: aqua;
+        margin: auto;
+
+    }
+</style>
+<div class="div">
+        <form method="get" action="vaccineurl">
+            <table>
+                <tr>
+                    <td>Enter Your Name:</td>
+                    <td><input type="text" name="pname">
+
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>Enter Your Age:</td>
+                    <td><input type="number" name="page">
+
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>Enter Your Adress:</td>
+                    <td><input type="text" name="paddress">
+
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>Enter Your mail:</td>
+                    <td><input type="email" name="pmail">
+
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td  >Select Vcenter:
+                        </td>
+                        <td>
+                        <select class="vac" name="vcenter">
+                            <option value="Balasore">Balasore</option>
+                            <option value="Jaleswar">Jaleswar</option>
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Cuttack">Cuttack</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td  style="text-align:right">
+                        <input type="checkbox" value="Checked" name="cond">
+                    </td>
+                    <td>Agree Term and Condition</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Register</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+                
+                
+
+            </table>
+
+
+        </form>
+
+    </div>

@@ -1,0 +1,27 @@
+package com.nt.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class AllFormCompsServlet extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		//get pritnWriter
+		PrintWriter pw = res.getWriter();
+		//set content type
+		res.setContentType("text/html");
+		//read form data
+		String name = req.getParameter("cname");
+		int age = Integer.parseInt(req.getParameter("cage"));
+		String addrs = req.getParameter("addrs")
+		
+		
+		
+	}
+
+}

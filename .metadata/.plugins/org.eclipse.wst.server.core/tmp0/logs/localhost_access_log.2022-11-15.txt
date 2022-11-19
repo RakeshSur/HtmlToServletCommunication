@@ -1,0 +1,5 @@
+127.0.0.1 - - [15/Nov/2022:15:24:07 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [15/Nov/2022:15:24:08 +0530] "GET /AllFormComponentHtmlToServlet/form.html HTTP/1.1" 200 6692
+127.0.0.1 - - [15/Nov/2022:17:50:34 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [15/Nov/2022:17:50:35 +0530] "GET /AllFormComponentHtmlToServlet/ HTTP/1.1" 200 6493
+127.0.0.1 - - [15/Nov/2022:17:54:07 +0530] "GET /AllFormComponentHtmlToServlet/processurl?cname=Rakesh+Sur&cage=39&cadds=Haldia&gender=male&ms=Single&qlfy=BCA&hb=Boat&favCousine=chinese&favcolor=%2300ff00&luckynumber=5&salary=40407&mail=rakeshsur72%40gmail.com&dob=1975-12-15&tob=10%3A20&doj=2018-09-12T10%3A20&mob=654654654654561&eMonth=jan&favWeek=wed&fbUrl=https%3A%2F%2Fwww.facebook.com%2F&sString=hello HTTP/1.1" 200 997

@@ -1,0 +1,6 @@
+127.0.0.1 - - [17/Nov/2022:23:58:12 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [17/Nov/2022:23:58:14 +0530] "GET /WishMessageApp-HtmlToServletCommunicationUsingHyperLinks/ HTTP/1.1" 404 813
+127.0.0.1 - - [17/Nov/2022:23:59:24 +0530] "GET /WishMessageApp-HtmlToServletCommunicationUsingHyperLinks/Page.html HTTP/1.1" 200 331
+127.0.0.1 - - [17/Nov/2022:23:59:27 +0530] "GET /WishMessageApp-HtmlToServletCommunicationUsingHyperLinks/wishurl HTTP/1.1" 200 308
+127.0.0.1 - - [17/Nov/2022:23:59:32 +0530] "GET /WishMessageApp-HtmlToServletCommunicationUsingHyperLinks/wishurl HTTP/1.1" 200 308
+127.0.0.1 - - [17/Nov/2022:23:59:37 +0530] "GET /WishMessageApp-HtmlToServletCommunicationUsingHyperLinks/wishurl HTTP/1.1" 200 308

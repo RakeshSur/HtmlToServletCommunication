@@ -1,0 +1,123 @@
+<h1 style="color:green;text-align:center">Working With Multiple Submit Button And HyperLInk</h1>
+<style>
+ .div{
+        height: 30%;
+        width: 20%;
+        border: solid black;
+        
+        background-color: aqua;
+        margin: auto;
+
+    }
+.input1{
+background-color:green;
+border-radius: 3px;
+ transition: 0.1s;
+ cursor:pointer;
+}
+.input1:hover{
+background-color: yelow;
+}
+.input2{
+background-color:brown;
+border-radius: 3px;
+ transition: 0.1s;
+ cursor:pointer;
+}
+.input2:hover{
+background-color: brown;
+}
+
+.input3{
+background-color:pink;
+border-radius: 3px;
+ transition: 0.1s;
+ cursor:pointer;
+}
+.input3:hover{
+background-color: red;
+}
+.input4{
+background-color:red;
+border-radius: 3px;
+ transition: 0.1s;
+ cursor:pointer;
+}
+.input4:hover{
+background-color: pink;
+}
+.button1{
+    background-color: yellow;
+    color: black;
+    height: 30px;
+    width:  100px;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 1s,color 1s;
+    
+}
+.button1:hover{
+    background-color: red;
+}
+.button1:active{
+    opacity: 0.4;
+}
+.button2{
+    background-color: blue;
+    color: black;
+    height: 30px;
+    width:  100px;
+    border-style: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 1s,color 1s;
+    
+}
+.button2:hover{
+    background-color: red;
+}
+.button2:active{
+    opacity: 0.4;
+}
+#wish{
+cursor: pointer;
+ color: green;
+}
+</style>
+
+
+<div class="div">
+<form action="arithmeticurl"  method="POST">
+
+<table >
+<tr>
+<td> Value:1</td>
+<td><input  type="text" name="t1"></td>
+</tr>
+
+<tr>
+<td> Value:2</td>
+<td><input  type="text" name="t2"></td>
+</tr>
+<tr>
+<td><input class="input1" type="submit" value="add" name="s1">&nbsp;&nbsp;
+
+<input class="input2"  type="submit" value="sub" name="s1">
+</td>
+<td><input class="input3"  type="submit" value="mul" name="s1">&nbsp;&nbsp;
+<input class="input4"  type="submit" value="div" name="s1">
+</td>
+
+</tr>
+<tr>
+<td id="wish"><a href="arithmeticurl?s1=link1">WISH MESSAGE</a></td>
+
+<td id="name"><a href="arithmeticurl?s1=link2">SEASON NAME</a></td>
+
+</tr>
+</table>
+
+
+</form>
+</div>

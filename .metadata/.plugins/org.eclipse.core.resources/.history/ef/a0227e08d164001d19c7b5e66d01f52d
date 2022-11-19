@@ -1,0 +1,112 @@
+package com.nt.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class AllFormCompsServlet extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		//get pritnWriter
+		PrintWriter pw = res.getWriter();
+		//set content type
+		res.setContentType("text/html");
+		//read form data
+		String name = req.getParameter("cname");
+		int age = Integer.parseInt(req.getParameter("cage"));
+		String addrs = req.getParameter("cadds");
+		String gen = req.getParameter("gender");
+		String ms= req.getParameter("ms");
+		
+		if(ms==null) 
+			ms="single";
+		
+		String qlfy= req.getParameter("qlfy");
+		if(qlfy==null) 
+			qlfy="NO qulification is selected";//handling non check state for multiple check box
+		String hobies[] = req.getParameterValues("hb");
+		if(hobies==null)
+			hobies = new String[]{"NO Hobies is selected"};
+		
+		String cusin[] =  req.getParameterValues("favCousine");
+		if(cusin==null)
+			cusin = new String[]{"NO fav cusin  is selected"};
+		String color = req.getParameter("favcolor");
+		int lnumber = Integer.parseInt(req.getParameter("luckynumber"));
+		int salary = Integer.parseInt(req.getParameter("salary"));
+ 		String email = req.getParameter("mail");
+ 		String dob = req.getParameter("dob");
+ 		String tob = req.getParameter("tob");
+ 		String doj = req.getParameter("doj");
+		long mobno = Long.parseLong(req.getParameter("mob"));
+		String emonth = req.getParameter("eMonth");
+		String favWeek = req.getParameter("favWeek");
+		String fburl = req.getParameter("fbUrl");
+		String string = req.getParameter("sString");
+		
+		//write b.logic
+		if(gen.equalsIgnoreCase("male")) {
+			if(age<5)
+				pw.println("<h1 style='color:red;text-align:center'>MR. "+name+" Your are baby boy</h1>");
+			else if(age<=12)
+				pw.println("<h1 style='color:red;text-align:center'>MR. "+name+" Your are a teen age boy</h1>");
+			else if(age<=20) 
+				pw.println("<h1 style='color:red;text-align:center'>MR. "+name+" Your are a Young age boy</h1>");
+			else if(age<=50)
+				pw.println("<h1 style='color:red;text-align:center'>MR. "+name+" Your are a old aged person</h1>");
+			else
+				pw.println("<h1 style='color:red;text-align:center'>MR. "+name+" Your are a old </h1>");
+		}
+		else {
+			if(age<5)
+				pw.println("<h1 style='color:red;text-align:center'>Ms. "+name+" Your are baby girl</h1>");
+			else if(age<=12) {
+				if(ms.equalsIgnoreCase("single"));
+					pw.println("<h1 style='color:red;text-align:center'>Ms. "+name+" Your are a teen age girl</h1>");
+			}
+			else {
+				pw.println("<h1 style='color:red;text-align:center'>Ms. "+name+" Your are a married girl</h1>");
+			}
+			else if(age<=20) 
+			else if(age<=30){
+				pw.println("<h1 style='color:red;text-align:center'>Ms. "+name+" Your are a Young age girl</h1>");
+			else if(age<=50)
+				pw.println("<h1 style='color:red;text-align:center'>Ms. "+name+" Your are a old aged woman</h1>");
+			else
+				pw.println("<h1 style='color:red;text-align:center'>Ms. "+name+" Your are a old  woman</h1>");
+			}
+		}
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,218 @@
+<style>
+
+        table{
+            align: center;
+            background-color: aqua;
+            border: 1;
+            border-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .cl1{
+            background-color: rgb(0, 255, 30);
+            border-radius: 20px;
+            transition: 2px;
+            
+        }
+        .cl1:hover{
+            background-color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 >All form component Based Customer login page</h1>
+    <form action="processurl" id="POST">
+        <table>
+            <tr>
+                <td>Coustmer Name
+                    <input type="text" name="cname">
+                </td>
+            </tr>
+            <tr>
+                <td>Coustmer Age
+                    <input type="number" name="cage">
+                </td>
+            </tr>
+            <tr>
+                <td>Coustmer Address
+                <td><textarea name="cadds" rows="5" cols="15">Enter your Adress</textarea></td>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female" checked> Female
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Meritial status
+                <td>
+                    <select name="ms" id="marital_status">
+                        <option value="">-Select Marital Status-</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Qulification
+                <td>
+                    <select name="qlfy" id="">
+                        <option value="">-Select Qulification</option>
+                        <option value="Btech">Btech</option>
+                        <option value="BSC">BCS</option>
+                        <option value="BCA">BCA</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies
+                <td>
+                    <input type="checkbox" id="vehicle1" name="hb" value="Bike">
+                    <label for="vehicle1"> I love to ride bike</label><br>
+                    <input type="checkbox" id="book" name="hb" value="Car">
+                    <label for="book"> I love to read Book</label><br>
+                    <input type="checkbox" id="song" name="hb" value="Boat">
+                    <label for="song"> I love to listen song</label><br><br>
+                    <input type="submit" value="Submit"><br><br>
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite cousine
+                <td>
+                    <select name="favCousine" id="">
+                        <option value="">-Select your Fav one</option>
+                        <option value="chinese">chinese</option>
+                        <option value="continental">continental</option>
+                        <option value="italian">italian</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite color
+                <td>
+                    <input type="color" name="favcolor">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Lucky number
+                <td>
+                    <input type="number" name="luckynumber">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Your Salary
+                <td>
+                    <input type="range" value="10000" name="salary" max="100000" min="10000"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>10000</output>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Email id
+                <td>
+
+                    <input type="email" name="mail" id="mail">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth
+                <td>
+
+                    <input type="date" name="dob" id="">
+
+                </td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Time of birth
+                <td>
+
+                    <input type="time" name="tob" id="">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of joining
+                <td>
+
+                    <input type="datetime-local" name="doj" id="">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Mbile No
+                <td>
+
+                    <input type="tel" name="mob" id="">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Elegrtic Month
+                <td>
+
+                    <input type="month" name="eMonth" id="">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite weekDay
+                <td>
+
+                    <input type="week" name="favWeek" id="">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>FB url
+                <td>
+
+                    <input type="url" name="fbUrl" id="">
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Google SearchString
+                <td>
+
+                    <input type="search" name="sString" id="">
+
+                </td>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                   <button class="cl1" type="submit" value="Submit">Submit</button>
+                    <button  class="cl1" type="reset" value="Reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>

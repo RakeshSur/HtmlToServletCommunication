@@ -1,0 +1,40 @@
+<style>
+.sub{
+ background-color: blue;
+    border-radius: 8px;
+    transition: 0.1s;
+    height:30px;
+    width:130px;
+    cursor:pointer;
+    color: 0.15s;
+}
+.sub:hover {
+	 background-color: aqua;
+}
+.sub:active {
+	opacity: 0.8;
+}
+
+</style>
+
+
+
+<h1 style="color:blue;text-align:center">Html To Servlet Communication Using Forms</h1>
+
+<div>
+<form method="get" action="voteurl">
+<label for="name">Your Name</label><span style="color:red">*</span>
+<input type="text" id="name" name="pname">
+<Br>
+<label for="age">Your Age</label><span style="color:red">*</span>
+<input type="number" id="age" name="page">
+<Br>
+<label for="address">Your Address</label><span style="color:red">*</span>
+<input type="text" id="address" name="paddress">
+<br>
+<input class="sub" type="submit" value="checkVotingElgibility">
+</div>
+
+
+
+</form>
